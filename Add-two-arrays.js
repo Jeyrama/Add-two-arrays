@@ -25,3 +25,15 @@ See below:
 
 
 // Solution
+
+function addArrays(array1, array2) {
+  let nbr1 = parseInt(array1.join('')) || 0
+  let nbr2 = parseInt(array2.join('')) || 0
+  let sum = Math.abs(nbr1 + nbr2)
+  let sign = nbr1 + nbr2 < 0 ? -1 : 1
+  let res = sum.toString().split('').map(x => parseInt(x))
+  
+  res[0] *= sign
+  
+  return nbr1 === 0 && nbr2 === 0 ? [] : res
+}
