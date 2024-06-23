@@ -37,3 +37,5 @@ function addArrays(array1, array2) {
   
   return nbr1 === 0 && nbr2 === 0 ? [] : res
 }
+
+// or
