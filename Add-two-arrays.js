@@ -39,3 +39,13 @@ function addArrays(array1, array2) {
 }
 
 // or
+
+const parseDigits = (digits) =>
+  +digits.join``
+  
+const unparseInt = (int) =>
+  String(int).split(/\B/).map(Number)
+  
+const addArrays = (arr1, arr2/*d2*/) =>
+  unparseInt(parseDigits(arr1) + parseDigits(arr2))
+    .filter((digit, index) => index || digit)
